@@ -10,5 +10,5 @@ inputs:
 runs:
     using: "composite"
     steps: 
-        - run: echo hello ${{inputs.asdfasdfsadfa}}
+        - run: ecdsfho hello
         - run: echo sha ${{github.ew4fr4e}}
