@@ -1,0 +1,14 @@
+name: "Composite Action Test Errors"
+description: "Run a simple composite action"
+env:
+  NAME2: test2
+  SERVER: development
+inputs:
+  your_name:
+    description: 'lol'
+    default: 'Ethan'
+runs:
+    using: "composite"
+    steps: 
+        - run: echo hello ${{inputs.asdfasdfsadfa}}
+        - run: echo sha ${{github.ew4fr4e}}
