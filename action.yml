@@ -10,5 +10,5 @@ inputs:
 runs:
     using: "composite"
     steps: 
-        - run: echo {{ fromJSON("not json") }}
+        - run: echo ${{ fromJSON("not json") }}
         - run: ecdsfho hello
