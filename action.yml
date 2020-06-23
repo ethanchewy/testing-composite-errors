@@ -10,6 +10,5 @@ inputs:
 runs:
     using: "composite"
     steps: 
-        - run::::::
+        - run: echo {{ fromJSON("not json") }}
         - run: ecdsfho hello
-        - run: echo sha ${{github.ew4fr4e}}
