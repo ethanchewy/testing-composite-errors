@@ -7,8 +7,10 @@ inputs:
   your_name:
     description: 'lol'
     default: 'Ethan'
+outputs:
+  random_number: ${{ fromJson('not json) }}
+  food: ${{ steps.food.outputs.test }}
 runs:
     using: "composite"
     steps: 
-        - run: echo ${{ fromJson("not json") }}
         - run: ecdsfho hello
