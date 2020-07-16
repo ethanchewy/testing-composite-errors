@@ -7,9 +7,6 @@ inputs:
   your_name:
     description: 'lol'
     default: 'Ethan'
-outputs:
-  random_number: 123
-  food: ${{ steps.food.outputs.test }}
 runs:
     using: "composite"
     steps: 
