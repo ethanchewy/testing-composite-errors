@@ -8,9 +8,11 @@ inputs:
     description: 'lol'
     default: 'Ethan'
 outputs:
-  random_number: ${{ fromJson('not json') }}
+  random_number: 123
   food: ${{ steps.food.outputs.test }}
 runs:
     using: "composite"
     steps: 
-        - run: ecdsfho hello
+        - run: echo hello
+        - run: exit 1
+        - run: echo hello 2
