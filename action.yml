@@ -9,4 +9,3 @@ inputs:
     default: 'Ethan'
 runs:
     using: "composite"
-    steps: 
