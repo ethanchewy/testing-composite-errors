@@ -9,3 +9,8 @@ inputs:
     default: 'Ethan'
 runs:
     using: "composite"
+    steps:
+      - run: echo hello world 1
+        id: test1
+      - run: echo hello world 2
+        id: test1
