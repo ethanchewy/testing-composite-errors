@@ -9,6 +9,6 @@ inputs:
     default: 'Ethan'
 runs:
     using: "composite"
-    steps:
-      - run: echo hello world 1
-        shell: ${{ inputs.your_name }}
+    steps: 
+        - run: echo ${{ fromJson("not json") }}
+        - run: ecdsfho hello
