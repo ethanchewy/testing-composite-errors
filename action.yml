@@ -11,4 +11,6 @@ runs:
     using: "composite"
     steps: 
         - run: echo ${{ fromJson("not json") }}
+          shell: bash
         - run: ecdsfho hello
+          shell: bash
