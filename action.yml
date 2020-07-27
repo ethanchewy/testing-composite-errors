@@ -11,5 +11,4 @@ runs:
     using: "composite"
     steps:
       - run: echo hello world 1
-        id: $GITHUB_ACTION_PATH
-        shell: bash
+        shell: ${{ inputs.your_name }}
